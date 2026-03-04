@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>domt</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right,rgba(6, 64, 6, 0.86) ,black);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>iniciando DOM</h1>
+    <p>aqui vai o resultado</p>
+    <p>aprendendo a usar <strong>DOM</strong> em js</p>
+    <div id="msg">clica aqui</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('esta escrito assim: ' + p1.innerHTML)
+        var d = window.document.getElementById('msg')
+    </script>
+</body>
+</html>
